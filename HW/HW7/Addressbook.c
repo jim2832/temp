@@ -9,7 +9,7 @@ struct Data{
 };
 
 int main(void){
-    struct Data person[N];
+    struct Data person[MAX];
     FILE *read;
     FILE *write;
     char input;
