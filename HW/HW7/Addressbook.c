@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define N 50
+#define MAX 50
 
 struct Data{
     char name[80];
@@ -17,7 +17,7 @@ int main(void){
     int number = 0; //count the total number
 
     while(1){
-        if(number > N){
+        if(number > MAX){
             printf("Exceed the maximum number");
             return 0;
         }
