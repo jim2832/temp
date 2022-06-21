@@ -5,6 +5,15 @@ using namespace std;
 
 class Square{
     public:
+        //constructor
+        Square(){
+            len = 0;
+        }
+        //overload
+        Square(int n){
+            setLen(n);
+        }
+
         //return the area
         int area(){
             int area = pow(len, 2);
@@ -31,15 +40,26 @@ class Square{
 };
 
 int main(void){
-    Square S1, S2;
-    S1.setLen(10);
-    S2.setLen(20);
+    Square S1, S2, S3;
+    int n1,n2;
+    cin >> n1 >> n2;
+    S1.setLen(n1);
+    S2.setLen(n2);
+
+    cout << "Area = " << S1.area() << "cm^2" << endl;
+    cout << "Area = " << S2.area() << "cm^2" << endl;
+    cout << "Area = " << S3.area() << "cm^2" << endl;
     
+    /*
     cout << "The length of S1 is: " << S1.getLen() << ", "
     << "The area of S1 is: " << S1.area() << endl;
 
     cout << "The length of S2 is: " << S2.getLen() << ", "
     << "The area of S2 is: " << S2.area() << endl;
+
+    cout << "The length of S3 is: " << S3.getLen() << ", "
+    << "The area of S3 is: " << S3.area() << endl;
+    */
 
     return 0;
 }

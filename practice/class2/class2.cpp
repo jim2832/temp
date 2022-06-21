@@ -4,6 +4,27 @@ using namespace std;
 
 class Pokemon{
     public:
+        //constructor
+        Pokemon(){
+            name = "No name";
+            level = 1;
+            HpCur = 0;
+            HpMax = 0;
+            tools = new string[100]; //dynamic allcation
+        }
+
+        //overload
+        Pokemon(string na, int lv, int hpcur, int hpmax){
+            SetData(na, lv, hpcur, hpmax);
+            tools = new string[100]; //dynamic allcation
+        }
+
+        //destructor
+        ~Pokemon(){
+            cout << name << "has returned to the nature" << endl;
+            delete[] tools;
+        }
+
         void Show(){
             cout << "Name: " << name << endl;
             cout << "Level: " << level << endl;
@@ -54,12 +75,18 @@ class Pokemon{
         int level;
         int HpCur;
         int HpMax;
+        string *tools;
 };
 
 int main(void){
-    Pokemon p1, p2;
-    p1.SetData("Pika", 10, 15, 15);
-    p2.SetData("Dragon", 15, 25, 25);
+    Pokemon *p0 = new Pokemon("Turtle", 18, 30, 30); //dynamic allcation
+    p0 -> Show();
+    delete p0;
+
+    Pokemon p1("Pika", 10, 15, 15),
+            p2("Dragon", 15, 25, 25);
+    //p1.SetData("Pika", 10, 15, 15);
+    //p2.SetData("Dragon", 15, 25, 25);
 
     p1.Attack(p2);
     p2.Attack(p1);

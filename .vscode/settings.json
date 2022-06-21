@@ -4,6 +4,7 @@
         "stdlib.h": "c",
         "random": "cpp",
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "typeinfo": "cpp"
     }
 }
