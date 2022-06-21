@@ -13,7 +13,8 @@ class Pokemon{
         void Attack(Pokemon &target);
         void Defense(int n);
         void Cure();
-
+    
+    private:
         string name;
         int level;
         int HpCur;
