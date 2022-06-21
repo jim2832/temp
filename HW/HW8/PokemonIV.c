@@ -32,6 +32,6 @@ void InputData(struct Pokemon *p){
 
 void ShowInfo(struct Pokemon p){
     printf("Name: %s\n", p.Name);
-    printf("Name: %d\n", p.Lv);
-    printf("Name: %d\n", p.Hp);
+    printf("Lv: %d\n", p.Lv);
+    printf("HP: %d\n", p.Hp);
 }
