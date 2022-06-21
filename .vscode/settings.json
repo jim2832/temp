@@ -2,6 +2,8 @@
     "files.associations": {
         "stdio.h": "c",
         "stdlib.h": "c",
-        "random": "cpp"
+        "random": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp"
     }
 }
