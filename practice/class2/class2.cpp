@@ -11,6 +11,7 @@ class Pokemon{
             HpCur = 0;
             HpMax = 0;
             tools = new string[100]; //dynamic allcation
+            toolsNum = 0;
         }
 
         //overload
@@ -76,6 +77,7 @@ class Pokemon{
         int HpCur;
         int HpMax;
         string *tools;
+        int toolsNum;
 };
 
 int main(void){

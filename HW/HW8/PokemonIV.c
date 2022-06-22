@@ -8,7 +8,7 @@ struct Pokemon{
     int Hp;
 };
 
-void InputData(struct Pokemon *); // call by address
+void InputData(struct Pokemon *); //call by address
 void ShowInfo(struct Pokemon);
 
 int main(void){
